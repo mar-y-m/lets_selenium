@@ -35,7 +35,7 @@ public class MySecondTest {
         driver.findElement(By.name("login")).submit();
         System.out.println(driver.getTitle());
         String text1 = "Dashboard | My Store";
-        wait.until(titleIs(text));
+        wait.until(titleIs(text1));
         driver.findElement(By.linkText("Sign Out")).click();
         System.out.println(driver.getTitle());
         wait.until(titleIs(text));
